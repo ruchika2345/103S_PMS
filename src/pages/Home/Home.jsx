@@ -4,6 +4,7 @@ import './Home.css'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
+
 const Home = () => {
   const [products, setProducts] = useState([])
   const fetchProducts = async ()=>{
@@ -28,7 +29,7 @@ const Home = () => {
         <h2 className="product-name">{product.productName}</h2>
         <p className="product-description">{product.productDescription}</p>
         <p>{product.productMaterial}</p>
-       <Link to={`/singleProduct/${product.id}`}>See More </Link>
+       <Link to={`/singleProduct/${product.id}`}>See More</Link>
     </div>
         )
       })
