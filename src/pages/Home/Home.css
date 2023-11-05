@@ -1,4 +1,8 @@
-
+       .card-container{
+          display: flex;
+         justify-content: space-around;
+            flex-wrap: wrap;
+}
         .card {
             width: 300px;
             border: 1px solid #ccc;
@@ -7,6 +11,7 @@
             margin: 20px;
             padding: 10px;
             background-color: #fff;
+            margin-bottom: 20px;
         }
 
         /* Style for the product image */
